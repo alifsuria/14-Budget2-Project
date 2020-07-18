@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="bootstrap 4 and jquery/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-11 mx-auto pt-3">
+                <h3>BUDGET APP</h3>
+                <div class="row">
+                    <div class="col-12 col-md-5 my-3">
+                        <div>
+                            <p class="top-feedback hide">Value Cannot Be Empty or Negative</p>
+                        </div>
+                        <div class="card top-card mb-5">
+                            <div class="card-body">
+                                <form action="" class="budget-form" id="budget-form">
+                                    <div class="form-group">
+                                        <h5 class="text-capitalize">Please enter your budget</h5>
+                                        <input type="number" class="form-control" id="budget-input">
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-success">Calculate</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <h4>BUDGET</h4>
+                                <p class="mt-2 icon"><span><i class="fas fa-money-bill-alt"></i></span></p>
+                                <h1 class="font-1"><span>RM</span><span id="budget-display">0</span></h1>
+                            </div>
+                            <div class="col-4 text-center">
+                                <h4>EXPENSE</h4>
+                                <p class="mt-2 icon"><span><i class="far fa-credit-card" aria-hidden="true"></i></span>
+                                </p>
+                                <h1 class="font-2"><span>RM</span><span id="expense-display">0</span></h1>
+                            </div>
+                            <div class="col-4 text-center">
+                                <h4>BALANCE</h4>
+                                <p class="mt-2 icon"><span><i class="fas fa-dollar-sign"></i></span></p>
+                                <h1 class="font-1"><span>RM</span><span id="balance-display">0</span></h1>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <div>
+                            <p class="btm-feedback hide">Value Cannot Be Empty or Negative or Same Title</p>
+                        </div>
+                        <div class="card bottom-card">
+                            <div class="card-body">
+                                <form action="" class="expense-form" id="expense-form">
+                                    <div class="form-group">
+                                        <h5 class="text-capitalize">Please enter your expense name</h5>
+                                        <input type="text" class="form-control" id="expense-name">
+                                    </div>
+                                    <div class="form-group">
+                                        <h5 class="text-capitalize">Please enter expense amount</h5>
+                                        <input type="number" class="form-control" id="expense-amount">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-outline-danger">Add Expense</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <div id="expense-list">
+                            <div class="expensive-info mb-3 d-flex justify-content-between text-capitalize">
+                                <h5 class="list-item">Expense Title</h5>
+                                <h5 class="list-item">Expense Value</h5>
+                                <h5 class="list-item"></h5>
+                            </div>
+                            <!-- <div class="expense">
+                                <div class="expense-item d-flex justify-content-between text-center">
+                                    <h6 class="expense-title mb-0 list-item">-KFC</h6>
+                                    <h5 class="expense-amount mb-0 list-item">$10</h5>
+                                    <div class="expense-icon list-item">
+                                        <a href=""><i class="fas fa-edit text-primary"></i></a>
+                                        <a href=""><i class="fas fa-trash text-danger"></i></a>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="bootstrap 4 and jquery/jquery-3.3.1.js"></script>
+    <script src="bootstrap 4 and jquery/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
